@@ -1,0 +1,42 @@
+//head
+- var toolbars = ["顺网游戏","顺网通行证","充值中心","游戏推荐","帮助中心"]
+- var menus = ["我的账户","游戏充值","顺圆充值","游戏大厅"]
+mixin menu()
+  ul.menu
+    each menu, index in menus
+      -if(index == 0){
+        li(class="curr")
+          a(href="#")= menu
+      -}else{
+        li
+          a(href="#")= menu
+      -}
+
+.toolbar-head
+  .layout
+    .login-info
+      span 您好，XXXXXXXXXXXXXXXXXX
+      a(href="#") [退出]
+    ul.toolbar-menu
+       - each toolbar, index in toolbars
+         li(class="ico-#{index}")
+           a(href="#",target="_blank")= toolbar
+.site-head
+  .site-head-bg
+    .layout
+      a(href="/",class="logo") 顺网游戏充值中心
+      +menu(currmenu)
+.toolbar-info.none
+  .close &times;
+  .layout
+    p 公告：因系统维护，2015-2-20 12:00:00开始暂停服务1小时
+.toolbar-wrap
+  .toolbar-info
+    .close &times;
+    .layout
+      p 还有 5笔 订单等待支付，
+        a(href="#").pay 快去支付！
+
+
+
+

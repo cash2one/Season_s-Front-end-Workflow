@@ -1,0 +1,38 @@
+extends layouts/_default
+- var currmenu = "我的账户"
+block title
+  title 公共组件
+body
+  block main
+    .btns
+      a(href="#",class="btn-blue-m")
+        span 重新充值
+      a(href="#",class="btn-org-m")
+        span 重新遇到问题
+      a(href="#",class="btn-gray-m")
+        span 返回修改
+      a(href="#",class="btn-org-l")
+        span 立即充值
+      a(href="#",class="btn-gray-s")
+        span 确定
+      input(type="text",title="first tooltip",data-trigger="click").txt#element
+      input(type="text").txt-lg
+      input(type="text").txt-llg
+      input(type="text").txt-sm
+      input(type="text").txt-ssm
+    .row
+      strong 日历 bootstrap-datepicker.js 
+      a(href="https://github.com/eternicode/bootstrap-datepicker",target="_blank") https://github.com/eternicode/bootstrap-datepicker
+    .row
+      strong 弹窗 bootstrap-modal.js 
+      a(href="http://getbootstrap.com/javascript/#modals",target="_blank") http://getbootstrap.com/javascript/#modals
+    .row
+      strong 出错提示 bootstrap-tooltip-bsie.js 
+      a(href="http://getbootstrap.com/2.3.2/javascript.html#tooltips",target="_blank") http://getbootstrap.com/2.3.2/javascript.html#tooltips
+  block scripts
+    script.
+      $(function(){
+         $('#element').tooltip('show')
+      })
+
+

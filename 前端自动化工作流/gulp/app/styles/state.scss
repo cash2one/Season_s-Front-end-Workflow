@@ -1,0 +1,87 @@
+.result{
+  border: 1px solid #BEBEBE;
+  width: 860px;
+  min-height:570px;
+  margin: 0 auto;
+  margin-top: 30px;
+  background: #ffffff;
+  position: relative;
+  .ico-succ{
+    width: 363px;
+    height:285px;
+    background: url("../images/pay-succ.jpg") no-repeat;
+    margin: 10px auto;
+  }
+  .ico-error{
+    width: 363px;
+    height:285px;
+    background: url("../images/pay-error.jpg") no-repeat;
+    margin: 10px auto;
+  }
+  .ico-uncomplete{
+    width: 363px;
+    height:285px;
+    background: url("../images/pay-uncomplete.jpg") no-repeat;
+    margin: 10px auto;
+  }
+  .table-b{
+    font-size: 14px;
+    text-align: left;
+    width: 720px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    td{
+      padding:10px;
+    }
+  }
+  .bottom-info{
+    height: 34px;
+    line-height: 34px;
+    position: absolute;
+    background: #EEEEEE;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    p{
+      padding-left: 10px;
+      font-size: 14px;
+      a{
+        color: #ff6600;
+      }
+    }
+  }
+  .btn-link{
+    margin-left: 10px;
+    color: #669fd5;
+    text-decoration: underline;
+  }
+  .btns{
+    text-align: center;
+    a{margin:  0 10px;}
+  }
+  .txt-center{
+    text-align: center;
+    font-size: 14px;
+    margin-bottom:20px;
+    span{padding: 0 10px;}
+  }
+  .reason-wrap{
+    font-size: 14px;
+    margin: -10px auto 10px;
+    width: 610px;
+    p.reason{
+      a{
+        color: #2b67a0;
+        text-decoration: underline;
+      }
+    }
+  }
+  .error-info{
+   color: #C80002;
+  }
+  .org{
+    color:#ff6600;
+    font-weight: bold;
+
+  }
+}

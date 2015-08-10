@@ -1,0 +1,1256 @@
+{
+  "message": "请求成功",
+  "data": {
+    "isLogin": false,
+    "gameType": 0,
+    "entered": true,
+    "gameUnit": "紫晶",
+    "minCharge": 10,
+    "rechargeProportion": 10,
+    "serverType": 2,
+    "guids": [],
+    "rechargeConfigList": [
+      {
+        "gameCoin": 100,
+        "gameCoinMes": "100紫晶",
+        "kedouCoin": 10.0,
+        "gameCoinRemark": ""
+      },
+      {
+        "gameCoin": 200,
+        "gameCoinMes": "200紫晶",
+        "kedouCoin": 20.0,
+        "gameCoinRemark": ""
+      },
+      {
+        "gameCoin": 300,
+        "gameCoinMes": "300紫晶",
+        "kedouCoin": 30.0,
+        "gameCoinRemark": ""
+      },
+      {
+        "gameCoin": 500,
+        "gameCoinMes": "500紫晶",
+        "kedouCoin": 50.0,
+        "gameCoinRemark": ""
+      },
+      {
+        "gameCoin": 1000,
+        "gameCoinMes": "1000紫晶",
+        "kedouCoin": 100.0,
+        "gameCoinRemark": ""
+      },
+      {
+        "gameCoin": 2000,
+        "gameCoinMes": "2000紫晶",
+        "kedouCoin": 200.0,
+        "gameCoinRemark": ""
+      },
+      {
+        "gameCoin": 3000,
+        "gameCoinMes": "3000紫晶",
+        "kedouCoin": 300.0,
+        "gameCoinRemark": ""
+      },
+      {
+        "gameCoin": 5000,
+        "gameCoinMes": "5000紫晶",
+        "kedouCoin": 500.0,
+        "gameCoinRemark": ""
+      },
+      {
+        "gameCoin": 10000,
+        "gameCoinMes": "10000紫晶",
+        "kedouCoin": 1000.0,
+        "gameCoinRemark": ""
+      },
+      {
+        "gameCoin": 20000,
+        "gameCoinMes": "20000紫晶",
+        "kedouCoin": 2000.0,
+        "gameCoinRemark": ""
+      },
+      {
+        "gameCoin": 50000,
+        "gameCoinMes": "50000紫晶",
+        "kedouCoin": 5000.0,
+        "gameCoinRemark": ""
+      },
+      {
+        "gameCoin": 100000,
+        "gameCoinMes": "100000紫晶",
+        "kedouCoin": 10000.0,
+        "gameCoinRemark": ""
+      }
+    ],
+    "playedRegionList": [],
+    "allRegionList": [
+      {
+        "id": "s176_176",
+        "name": "176区 天涯之巅",
+        "fullName": "176区 天涯之巅",
+        "identifier": "176",
+        "serverList": []
+      },
+      {
+        "id": "s1_1",
+        "name": "1区 傲视天下",
+        "fullName": "1区 傲视天下",
+        "serverList": []
+      },
+      {
+        "id": "s2_2",
+        "name": "2区 九劫神剑",
+        "fullName": "2区 九劫神剑",
+        "serverList": []
+      },
+      {
+        "id": "s3_3",
+        "name": "3区 幸运之星",
+        "fullName": "3区 幸运之星",
+        "serverList": []
+      },
+      {
+        "id": "s4_4",
+        "name": "4区 妖姬公主",
+        "fullName": "4区 妖姬公主",
+        "serverList": []
+      },
+      {
+        "id": "s5_5",
+        "name": "5区 九尾风狐",
+        "fullName": "5区 九尾风狐",
+        "serverList": []
+      },
+      {
+        "id": "s6_6",
+        "name": "6区 狂暴意志",
+        "fullName": "6区 狂暴意志",
+        "serverList": []
+      },
+      {
+        "id": "s7_7",
+        "name": "7区 紫霄幻魔",
+        "fullName": "7区 紫霄幻魔",
+        "serverList": []
+      },
+      {
+        "id": "s8_8",
+        "name": "8区 左右逢源",
+        "fullName": "8区 左右逢源",
+        "serverList": []
+      },
+      {
+        "id": "s9_9",
+        "name": "9区 招募豪侠",
+        "fullName": "9区 招募豪侠",
+        "serverList": []
+      },
+      {
+        "id": "s10_10",
+        "name": "10区 决战风雷",
+        "fullName": "10区 决战风雷",
+        "serverList": []
+      },
+      {
+        "id": "s11_11",
+        "name": "11区 九劫剑主",
+        "fullName": "11区 九劫剑主",
+        "serverList": []
+      },
+      {
+        "id": "s12_12",
+        "name": "12区 巅峰之路",
+        "fullName": "12区 巅峰之路",
+        "serverList": []
+      },
+      {
+        "id": "s13_13",
+        "name": "13区 波澜壮阔",
+        "fullName": "13区 波澜壮阔",
+        "serverList": []
+      },
+      {
+        "id": "s14_14",
+        "name": "14区 一剑长天",
+        "fullName": "14区 一剑长天",
+        "serverList": []
+      },
+      {
+        "id": "s15_15",
+        "name": "15区 人剑合一",
+        "fullName": "15区 人剑合一",
+        "serverList": []
+      },
+      {
+        "id": "s16_16",
+        "name": "16区 终极对战",
+        "fullName": "16区 终极对战",
+        "serverList": []
+      },
+      {
+        "id": "s17_17",
+        "name": "17区 风凌天下",
+        "fullName": "17区 风凌天下",
+        "serverList": []
+      },
+      {
+        "id": "s18_18",
+        "name": "18区 跌宕起伏",
+        "fullName": "18区 跌宕起伏",
+        "serverList": []
+      },
+      {
+        "id": "s19_19",
+        "name": "19区 盖世天尊",
+        "fullName": "19区 盖世天尊",
+        "serverList": []
+      },
+      {
+        "id": "s20_20",
+        "name": "20区 顶天立地",
+        "fullName": "20区 顶天立地",
+        "serverList": []
+      },
+      {
+        "id": "s21_21",
+        "name": "21区 花好月圆",
+        "fullName": "21区 花好月圆",
+        "serverList": []
+      },
+      {
+        "id": "s22_22",
+        "name": "22区 乾坤挪移",
+        "fullName": "22区 乾坤挪移",
+        "serverList": []
+      },
+      {
+        "id": "s23_23",
+        "name": "23区 战神诀杀",
+        "fullName": "23区 战神诀杀",
+        "serverList": []
+      },
+      {
+        "id": "s24_24",
+        "name": "24区 感天动地",
+        "fullName": "24区 感天动地",
+        "serverList": []
+      },
+      {
+        "id": "s25_25",
+        "name": "25区 神兵天降",
+        "fullName": "25区 神兵天降",
+        "serverList": []
+      },
+      {
+        "id": "s26_26",
+        "name": "26区 乾坤挪移",
+        "fullName": "26区 乾坤挪移",
+        "serverList": []
+      },
+      {
+        "id": "s27_27",
+        "name": "27区 天涯海角",
+        "fullName": "27区 天涯海角",
+        "serverList": []
+      },
+      {
+        "id": "s28_28",
+        "name": "28区 风生水起",
+        "fullName": "28区 风生水起",
+        "serverList": []
+      },
+      {
+        "id": "s29_29",
+        "name": "29区 一阵清风",
+        "fullName": "29区 一阵清风",
+        "serverList": []
+      },
+      {
+        "id": "s30_30",
+        "name": "30区 力挽狂澜",
+        "fullName": "30区 力挽狂澜",
+        "serverList": []
+      },
+      {
+        "id": "s31_31",
+        "name": "31区 寻寻觅觅",
+        "fullName": "31区 寻寻觅觅",
+        "serverList": []
+      },
+      {
+        "id": "s32_32",
+        "name": "32区 海阔天空",
+        "fullName": "32区 海阔天空",
+        "serverList": []
+      },
+      {
+        "id": "s33_33",
+        "name": "33区 风流倜傥",
+        "fullName": "33区 风流倜傥",
+        "serverList": []
+      },
+      {
+        "id": "s34_34",
+        "name": "34区 海纳百川",
+        "fullName": "34区 海纳百川",
+        "serverList": []
+      },
+      {
+        "id": "s35_35",
+        "name": "35区 青藏高原",
+        "fullName": "35区 青藏高原",
+        "serverList": []
+      },
+      {
+        "id": "s36_36",
+        "name": "36区 刀下留情",
+        "fullName": "36区 刀下留情",
+        "serverList": []
+      },
+      {
+        "id": "s37_37",
+        "name": "37区 情非得已",
+        "fullName": "37区 情非得已",
+        "serverList": []
+      },
+      {
+        "id": "s38_38",
+        "name": "38区 花好月圆",
+        "fullName": "38区 花好月圆",
+        "serverList": []
+      },
+      {
+        "id": "s39_39",
+        "name": "39区 秋色迷人",
+        "fullName": "39区 秋色迷人",
+        "serverList": []
+      },
+      {
+        "id": "s40_40",
+        "name": "40区 沉默边境",
+        "fullName": "40区 沉默边境",
+        "serverList": []
+      },
+      {
+        "id": "s41_41",
+        "name": "41区 暮然回首",
+        "fullName": "41区 暮然回首",
+        "serverList": []
+      },
+      {
+        "id": "s42_42",
+        "name": "42区 八仙过海",
+        "fullName": "42区 八仙过海",
+        "serverList": []
+      },
+      {
+        "id": "s43_43",
+        "name": "43区 使徒行者",
+        "fullName": "43区 使徒行者",
+        "serverList": []
+      },
+      {
+        "id": "s44_44",
+        "name": "44区 江山如画",
+        "fullName": "44区 江山如画",
+        "serverList": []
+      },
+      {
+        "id": "s45_45",
+        "name": "45区 美仑美奂",
+        "fullName": "45区 美仑美奂",
+        "serverList": []
+      },
+      {
+        "id": "s46_46",
+        "name": "46区 天雷滚滚",
+        "fullName": "46区 天雷滚滚",
+        "serverList": []
+      },
+      {
+        "id": "s47_47",
+        "name": "47区 谁与争锋",
+        "fullName": "47区 谁与争锋",
+        "serverList": []
+      },
+      {
+        "id": "s48_48",
+        "name": "48区 初次遇见",
+        "fullName": "48区 初次遇见",
+        "serverList": []
+      },
+      {
+        "id": "s49_49",
+        "name": "49区 雄霸天下",
+        "fullName": "49区 雄霸天下",
+        "serverList": []
+      },
+      {
+        "id": "s50_50",
+        "name": "50区 潇潇洒洒",
+        "fullName": "50区 潇潇洒洒",
+        "serverList": []
+      },
+      {
+        "id": "s51_51",
+        "name": "51区 傲视天下",
+        "fullName": "51区 傲视天下",
+        "serverList": []
+      },
+      {
+        "id": "s52_52",
+        "name": "52区 风色轨迹",
+        "fullName": "52区 风色轨迹",
+        "serverList": []
+      },
+      {
+        "id": "s53_53",
+        "name": "53区 跋山涉水",
+        "fullName": "53区 跋山涉水",
+        "serverList": []
+      },
+      {
+        "id": "s54_54",
+        "name": "54区 继承者们",
+        "fullName": "54区 继承者们",
+        "serverList": []
+      },
+      {
+        "id": "s55_55",
+        "name": "55区 逍遥红尘",
+        "fullName": "55区 逍遥红尘",
+        "serverList": []
+      },
+      {
+        "id": "s56_56",
+        "name": "56区 天下无双",
+        "fullName": "56区 天下无双",
+        "serverList": []
+      },
+      {
+        "id": "s57_57",
+        "name": "57区 神器传说",
+        "fullName": "57区 神器传说",
+        "serverList": []
+      },
+      {
+        "id": "s58_58",
+        "name": "58区 突击风暴",
+        "fullName": "58区 突击风暴",
+        "serverList": []
+      },
+      {
+        "id": "s59_59",
+        "name": "59区 神通广大",
+        "fullName": "59区 神通广大",
+        "serverList": []
+      },
+      {
+        "id": "s60_60",
+        "name": "60区 仙人指路",
+        "fullName": "60区 仙人指路",
+        "serverList": []
+      },
+      {
+        "id": "s61_61",
+        "name": "61区 斗破苍穹",
+        "fullName": "61区 斗破苍穹",
+        "serverList": []
+      },
+      {
+        "id": "s62_62",
+        "name": "62区 绝色唐门",
+        "fullName": "62区 绝色唐门",
+        "serverList": []
+      },
+      {
+        "id": "s63_63",
+        "name": "63区 喜迎国庆",
+        "fullName": "63区 喜迎国庆",
+        "serverList": []
+      },
+      {
+        "id": "s64_64",
+        "name": "64区 三国乱舞",
+        "fullName": "64区 三国乱舞",
+        "serverList": []
+      },
+      {
+        "id": "s65_65",
+        "name": "65区 回头望月",
+        "fullName": "65区 回头望月",
+        "serverList": []
+      },
+      {
+        "id": "s66_66",
+        "name": "66区 古剑奇谭",
+        "fullName": "66区 古剑奇谭",
+        "serverList": []
+      },
+      {
+        "id": "s67_67",
+        "name": "67区 环球航海",
+        "fullName": "67区 环球航海",
+        "serverList": []
+      },
+      {
+        "id": "s68_68",
+        "name": "68区 金秋十月",
+        "fullName": "68区 金秋十月",
+        "serverList": []
+      },
+      {
+        "id": "s69_69",
+        "name": "69区 再战明天",
+        "fullName": "69区 再战明天",
+        "serverList": []
+      },
+      {
+        "id": "s70_70",
+        "name": "70区 血饮传说",
+        "fullName": "70区 血饮传说",
+        "serverList": []
+      },
+      {
+        "id": "s71_71",
+        "name": "71区 狂暴意志",
+        "fullName": "71区 狂暴意志",
+        "serverList": []
+      },
+      {
+        "id": "s72_72",
+        "name": "72区 冰封之地",
+        "fullName": "72区 冰封之地",
+        "serverList": []
+      },
+      {
+        "id": "s73_73",
+        "name": "73区 出水芙蓉",
+        "fullName": "73区 出水芙蓉",
+        "serverList": []
+      },
+      {
+        "id": "s74_74",
+        "name": "74区 盖世英雄",
+        "fullName": "74区 盖世英雄",
+        "serverList": []
+      },
+      {
+        "id": "s75_75",
+        "name": "75区 海岛守卫",
+        "fullName": "75区 海岛守卫",
+        "serverList": []
+      },
+      {
+        "id": "s76_76",
+        "name": "76区 暗黑竹市",
+        "fullName": "76区 暗黑竹市",
+        "serverList": []
+      },
+      {
+        "id": "s77_77",
+        "name": "77区 特种部队",
+        "fullName": "77区 特种部队",
+        "serverList": []
+      },
+      {
+        "id": "s78_78",
+        "name": "78区 神秘之师",
+        "fullName": "78区 神秘之师",
+        "serverList": []
+      },
+      {
+        "id": "s79_79",
+        "name": "79区 太平盛世",
+        "fullName": "79区 太平盛世",
+        "serverList": []
+      },
+      {
+        "id": "s80_80",
+        "name": "80区 笑看人生",
+        "fullName": "80区 笑看人生",
+        "serverList": []
+      },
+      {
+        "id": "s81_81",
+        "name": "81区 百战天下",
+        "fullName": "81区 百战天下",
+        "serverList": []
+      },
+      {
+        "id": "s82_82",
+        "name": "82区 四海为家",
+        "fullName": "82区 四海为家",
+        "serverList": []
+      },
+      {
+        "id": "s83_83",
+        "name": "83区 全民傲世",
+        "fullName": "83区 全民傲世",
+        "serverList": []
+      },
+      {
+        "id": "s84_84",
+        "name": "84区 神棍狂欢",
+        "fullName": "84区 神棍狂欢",
+        "serverList": []
+      },
+      {
+        "id": "s85_85",
+        "name": "85区 吞噬天地",
+        "fullName": "85区 吞噬天地",
+        "serverList": []
+      },
+      {
+        "id": "s86_86",
+        "name": "86区 危机风暴",
+        "fullName": "86区 危机风暴",
+        "serverList": []
+      },
+      {
+        "id": "s87_87",
+        "name": "87区 热血屠龙",
+        "fullName": "87区 热血屠龙",
+        "serverList": []
+      },
+      {
+        "id": "s88_88",
+        "name": "88区 财神驾到",
+        "fullName": "88区 财神驾到",
+        "serverList": []
+      },
+      {
+        "id": "s89_89",
+        "name": "89区 九重天阙",
+        "fullName": "89区 九重天阙",
+        "serverList": []
+      },
+      {
+        "id": "s90_90",
+        "name": "90区 危机要塞",
+        "fullName": "90区 危机要塞",
+        "serverList": []
+      },
+      {
+        "id": "s91_91",
+        "name": "91区 神圣之光",
+        "fullName": "91区 神圣之光",
+        "serverList": []
+      },
+      {
+        "id": "s92_92",
+        "name": "92区 小桥流水",
+        "fullName": "92区 小桥流水",
+        "serverList": []
+      },
+      {
+        "id": "s93_93",
+        "name": "93区 婀娜多姿",
+        "fullName": "93区 婀娜多姿",
+        "serverList": []
+      },
+      {
+        "id": "s94_94",
+        "name": "94区 晴天霹雳",
+        "fullName": "94区 晴天霹雳",
+        "serverList": []
+      },
+      {
+        "id": "s95_95",
+        "name": "95区 鹿死谁手",
+        "fullName": "95区 鹿死谁手",
+        "serverList": []
+      },
+      {
+        "id": "s96_96",
+        "name": "96区 剑踪侠客",
+        "fullName": "96区 剑踪侠客",
+        "serverList": []
+      },
+      {
+        "id": "s97_97",
+        "name": "97区 终极爆破",
+        "fullName": "97区 终极爆破",
+        "serverList": []
+      },
+      {
+        "id": "s98_98",
+        "name": "98区 乱舞之命",
+        "fullName": "98区 乱舞之命",
+        "serverList": []
+      },
+      {
+        "id": "s99_99",
+        "name": "99区 权倾天下",
+        "fullName": "99区 权倾天下",
+        "serverList": []
+      },
+      {
+        "id": "s100_100",
+        "name": "100区 百服盛宴",
+        "fullName": "100区 百服盛宴",
+        "serverList": []
+      },
+      {
+        "id": "s101_101",
+        "name": "101区 霸业王朝",
+        "fullName": "101区 霸业王朝",
+        "serverList": []
+      },
+      {
+        "id": "s102_102",
+        "name": "102区 破坏之神",
+        "fullName": "102区 破坏之神",
+        "serverList": []
+      },
+      {
+        "id": "s103_103",
+        "name": "103区 水之王国",
+        "fullName": "103区 水之王国",
+        "serverList": []
+      },
+      {
+        "id": "s104_104",
+        "name": "104区 瞬间爆炸",
+        "fullName": "104区 瞬间爆炸",
+        "serverList": []
+      },
+      {
+        "id": "s105_105",
+        "name": "105区 疾风之刃",
+        "fullName": "105区 疾风之刃",
+        "serverList": []
+      },
+      {
+        "id": "s106_106",
+        "name": "106区 致命一击",
+        "fullName": "106区 致命一击",
+        "serverList": []
+      },
+      {
+        "id": "s107_107",
+        "name": "107区 无双乱舞",
+        "fullName": "107区 无双乱舞",
+        "serverList": []
+      },
+      {
+        "id": "s108_108",
+        "name": "108区 飓风加纳",
+        "fullName": "108区 飓风加纳",
+        "serverList": []
+      },
+      {
+        "id": "s109_109",
+        "name": "109区 无双击杀",
+        "fullName": "109区 无双击杀",
+        "serverList": []
+      },
+      {
+        "id": "s110_110",
+        "name": "110区 战天七杀",
+        "fullName": "110区 战天七杀",
+        "serverList": []
+      },
+      {
+        "id": "s111_111",
+        "name": "111区 奇迹归来",
+        "fullName": "111区 奇迹归来",
+        "serverList": []
+      },
+      {
+        "id": "s112_112",
+        "name": "112区 冰火之刃",
+        "fullName": "112区 冰火之刃",
+        "serverList": []
+      },
+      {
+        "id": "s113_113",
+        "name": "113区 海洋圣杯",
+        "fullName": "113区 海洋圣杯",
+        "serverList": []
+      },
+      {
+        "id": "s114_114",
+        "name": "114区 铁血通心",
+        "fullName": "114区 铁血通心",
+        "serverList": []
+      },
+      {
+        "id": "s115_115",
+        "name": "115区 圆月弯刀",
+        "fullName": "115区 圆月弯刀",
+        "serverList": []
+      },
+      {
+        "id": "s116_116",
+        "name": "116区 奇迹归来",
+        "fullName": "116区 奇迹归来",
+        "serverList": []
+      },
+      {
+        "id": "s117_117",
+        "name": "117区 混沌战域",
+        "fullName": "117区 混沌战域",
+        "serverList": []
+      },
+      {
+        "id": "s118_118",
+        "name": "118区 不败王国",
+        "fullName": "118区 不败王国",
+        "serverList": []
+      },
+      {
+        "id": "s119_119",
+        "name": "119区 奇迹皇朝",
+        "fullName": "119区 奇迹皇朝",
+        "serverList": []
+      },
+      {
+        "id": "s120_120",
+        "name": "120区 传奇霸业",
+        "fullName": "120区 传奇霸业",
+        "serverList": []
+      },
+      {
+        "id": "s121_121",
+        "name": "121区 虚空幻影",
+        "fullName": "121区 虚空幻影",
+        "serverList": []
+      },
+      {
+        "id": "s122_122",
+        "name": "122区 绝世武功",
+        "fullName": "122区 绝世武功",
+        "serverList": []
+      },
+      {
+        "id": "s123_123",
+        "name": "123区 晶莹剔透",
+        "fullName": "123区 晶莹剔透",
+        "serverList": []
+      },
+      {
+        "id": "s124_124",
+        "name": "124区 独步天涯",
+        "fullName": "124区 独步天涯",
+        "serverList": []
+      },
+      {
+        "id": "s125_125",
+        "name": "125区 霍比特人",
+        "fullName": "125区 霍比特人",
+        "serverList": []
+      },
+      {
+        "id": "s126_126",
+        "name": "126区 盛世三国",
+        "fullName": "126区 盛世三国",
+        "serverList": []
+      },
+      {
+        "id": "s127_127",
+        "name": "127区 年会盛典",
+        "fullName": "127区 年会盛典",
+        "serverList": []
+      },
+      {
+        "id": "s128_128",
+        "name": "128区 突击英雄",
+        "fullName": "128区 突击英雄",
+        "serverList": []
+      },
+      {
+        "id": "s129_129",
+        "name": "129区 喜气羊羊",
+        "fullName": "129区 喜气羊羊",
+        "serverList": []
+      },
+      {
+        "id": "s130_130",
+        "name": "130区 灵魂之舞",
+        "fullName": "130区 灵魂之舞",
+        "serverList": []
+      },
+      {
+        "id": "s131_131",
+        "name": "131区 玫瑰奇缘",
+        "fullName": "131区 玫瑰奇缘",
+        "serverList": []
+      },
+      {
+        "id": "s132_132",
+        "name": "132区 情人快乐",
+        "fullName": "132区 情人快乐",
+        "serverList": []
+      },
+      {
+        "id": "s133_133",
+        "name": "133区 新春佳节",
+        "fullName": "133区 新春佳节",
+        "serverList": []
+      },
+      {
+        "id": "s134_134",
+        "name": "134区 大年初一",
+        "fullName": "134区 大年初一",
+        "serverList": []
+      },
+      {
+        "id": "s135_135",
+        "name": "135区 三羊开泰",
+        "fullName": "135区 三羊开泰",
+        "serverList": []
+      },
+      {
+        "id": "s136_136",
+        "name": "136区 阖家团圆",
+        "fullName": "136区 阖家团圆",
+        "serverList": []
+      },
+      {
+        "id": "s137_137",
+        "name": "137区 轮回宿命",
+        "fullName": "137区 轮回宿命",
+        "serverList": []
+      },
+      {
+        "id": "s138_138",
+        "name": "138区 仙人指路",
+        "fullName": "138区 仙人指路",
+        "serverList": []
+      },
+      {
+        "id": "s139_139",
+        "name": "139区 天命天涯",
+        "fullName": "139区 天命天涯",
+        "serverList": []
+      },
+      {
+        "id": "s140_140",
+        "name": "140区 君临天下",
+        "fullName": "140区 君临天下",
+        "serverList": []
+      },
+      {
+        "id": "s141_141",
+        "name": "141区 双面毒刀",
+        "fullName": "141区 双面毒刀",
+        "serverList": []
+      },
+      {
+        "id": "s142_142",
+        "name": "142区 怒烈之焰",
+        "fullName": "142区 怒烈之焰",
+        "serverList": []
+      },
+      {
+        "id": "s143_143",
+        "name": "143区 天下归一",
+        "fullName": "143区 天下归一",
+        "serverList": []
+      },
+      {
+        "id": "s144_144",
+        "name": "144区 天魔神泣",
+        "fullName": "144区 天魔神泣",
+        "serverList": []
+      },
+      {
+        "id": "s145_145",
+        "name": "145区 天将雄师",
+        "fullName": "145区 天将雄师",
+        "serverList": []
+      },
+      {
+        "id": "s146_146",
+        "name": "146区 荣耀之刃",
+        "fullName": "146区 荣耀之刃",
+        "serverList": []
+      },
+      {
+        "id": "s147_147",
+        "name": "147区 巅峰王座",
+        "fullName": "147区 巅峰王座",
+        "serverList": []
+      },
+      {
+        "id": "s148_148",
+        "name": "148区 白色情人",
+        "fullName": "148区 白色情人",
+        "serverList": []
+      },
+      {
+        "id": "s149_149",
+        "name": "149区 金枝玉叶",
+        "fullName": "149区 金枝玉叶",
+        "serverList": []
+      },
+      {
+        "id": "s150_150",
+        "name": "150区 以静制动",
+        "fullName": "150区 以静制动",
+        "serverList": []
+      },
+      {
+        "id": "s151_151",
+        "name": "151区 桃花满园",
+        "fullName": "151区 桃花满园",
+        "serverList": []
+      },
+      {
+        "id": "s152_152",
+        "name": "152区 樱花盛开",
+        "fullName": "152区 樱花盛开",
+        "serverList": []
+      },
+      {
+        "id": "s153_153",
+        "name": "153区 三百英雄",
+        "fullName": "153区 三百英雄",
+        "serverList": []
+      },
+      {
+        "id": "s154_154",
+        "name": "154区 九星天辰",
+        "fullName": "154区 九星天辰",
+        "serverList": []
+      },
+      {
+        "id": "s155_155",
+        "name": "155区 周末踏春",
+        "fullName": "155区 周末踏春",
+        "serverList": []
+      },
+      {
+        "id": "s156_156",
+        "name": "156区 金枝玉叶",
+        "fullName": "156区 金枝玉叶",
+        "serverList": []
+      },
+      {
+        "id": "s157_157",
+        "name": "157区 春意盎然",
+        "fullName": "157区 春意盎然",
+        "serverList": []
+      },
+      {
+        "id": "s158_158",
+        "name": "158区 重燃战火",
+        "fullName": "158区 重燃战火",
+        "serverList": []
+      },
+      {
+        "id": "s159_159",
+        "name": "159区 九鼎之记",
+        "fullName": "159区 九鼎之记",
+        "serverList": []
+      },
+      {
+        "id": "s160_160",
+        "name": "160区 权利之战",
+        "fullName": "160区 权利之战",
+        "serverList": []
+      },
+      {
+        "id": "s161_161",
+        "name": "161区 九鼎神殿",
+        "fullName": "161区 九鼎神殿",
+        "serverList": []
+      },
+      {
+        "id": "s162_162",
+        "name": "162区 杀神之巅",
+        "fullName": "162区 杀神之巅",
+        "serverList": []
+      },
+      {
+        "id": "s163_163",
+        "name": "163区 阿修罗神",
+        "fullName": "163区 阿修罗神",
+        "serverList": []
+      },
+      {
+        "id": "s164_164",
+        "name": "164区 禁地魔王",
+        "fullName": "164区 禁地魔王",
+        "serverList": []
+      },
+      {
+        "id": "s165_165",
+        "name": "165区 炼狱法神",
+        "fullName": "165区 炼狱法神",
+        "serverList": []
+      },
+      {
+        "id": "s166_166",
+        "name": "166区 上古神兵",
+        "fullName": "166区 上古神兵",
+        "serverList": []
+      },
+      {
+        "id": "s167_167",
+        "name": "167区 天书神兵",
+        "fullName": "167区 天书神兵",
+        "serverList": []
+      },
+      {
+        "id": "s168_168",
+        "name": "168区 威武战狂",
+        "fullName": "168区 威武战狂",
+        "serverList": []
+      },
+      {
+        "id": "s169_169",
+        "name": "169区 玛雅神殿",
+        "fullName": "169区 玛雅神殿",
+        "serverList": []
+      },
+      {
+        "id": "s170_170",
+        "name": "170区 城主之刃",
+        "fullName": "170区 城主之刃",
+        "serverList": []
+      },
+      {
+        "id": "s171_171",
+        "name": "171区 魔龙教主",
+        "fullName": "171区 魔龙教主",
+        "serverList": []
+      },
+      {
+        "id": "s172_172",
+        "name": "172区 赤血恶魔",
+        "fullName": "172区 赤血恶魔",
+        "serverList": []
+      },
+      {
+        "id": "s173_173",
+        "name": "173区 白蛇妖王",
+        "fullName": "173区 白蛇妖王",
+        "serverList": []
+      },
+      {
+        "id": "s174_174",
+        "name": "174区 海底世界",
+        "fullName": "174区 海底世界",
+        "serverList": []
+      },
+      {
+        "id": "s175_175",
+        "name": "175区 火速全开",
+        "fullName": "175区 火速全开",
+        "serverList": []
+      },
+      {
+        "id": "s663_s663",
+        "name": "663区 天空之城",
+        "fullName": "663区 天空之城",
+        "serverList": []
+      },
+      {
+        "id": "s177_177",
+        "name": "177区 三国武神",
+        "fullName": "177区 三国武神",
+        "serverList": []
+      },
+      {
+        "id": "s178_178",
+        "name": "178区 极致秒杀",
+        "fullName": "178区 极致秒杀",
+        "serverList": []
+      },
+      {
+        "id": "s179_179",
+        "name": "179区 霸业庆典",
+        "fullName": "179区 霸业庆典",
+        "serverList": []
+      },
+      {
+        "id": "s180_180",
+        "name": "180区 异兽神兵",
+        "fullName": "180区 异兽神兵",
+        "serverList": []
+      },
+      {
+        "id": "s181_181",
+        "name": "181区 霸爷传奇",
+        "fullName": "181区 霸爷传奇",
+        "serverList": []
+      },
+      {
+        "id": "s182_182",
+        "name": "182区 斗转挪移",
+        "fullName": "182区 斗转挪移",
+        "serverList": []
+      },
+      {
+        "id": "s183_183",
+        "name": "183区 名剑之道",
+        "fullName": "183区 名剑之道",
+        "serverList": []
+      },
+      {
+        "id": "s184_184",
+        "name": "184区 劳动狂欢",
+        "fullName": "184区 劳动狂欢",
+        "serverList": []
+      },
+      {
+        "id": "s185_185",
+        "name": "185区 劳动模范",
+        "fullName": "185区 劳动模范",
+        "serverList": []
+      },
+      {
+        "id": "s186_186",
+        "name": "186区 雷霆万钧",
+        "fullName": "186区 雷霆万钧",
+        "serverList": []
+      },
+      {
+        "id": "s187_187",
+        "name": "187区 古剑奇谭",
+        "fullName": "187区 古剑奇谭",
+        "serverList": []
+      },
+      {
+        "id": "s188_188",
+        "name": "188区 封天战神",
+        "fullName": "188区 封天战神",
+        "serverList": []
+      },
+      {
+        "id": "s189_189",
+        "name": "189区 封天为王",
+        "fullName": "189区 封天为王",
+        "serverList": []
+      },
+      {
+        "id": "s190_190",
+        "name": "190区 三国战记",
+        "fullName": "190区 三国战记",
+        "serverList": []
+      },
+      {
+        "id": "s191_191",
+        "name": "191区 步步莲花",
+        "fullName": "191区 步步莲花",
+        "serverList": []
+      },
+      {
+        "id": "s192_192",
+        "name": "192区 突击火力",
+        "fullName": "192区 突击火力",
+        "serverList": []
+      },
+      {
+        "id": "s193_193",
+        "name": "193区 蛮荒之纪",
+        "fullName": "193区 蛮荒之纪",
+        "serverList": []
+      }
+    ]
+  },
+  "code": 0
+}

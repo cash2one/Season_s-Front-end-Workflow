@@ -1,0 +1,160 @@
+@import "compass/css3";
+
+.ipt-select{
+  border: 1px solid #669fd5;
+}
+.browser{
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+  background: #ffff00;
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 1000;
+  a{
+    color: #000;
+    text-decoration: underline;
+  }
+}
+.text-overflow {
+  display: block;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.dialog{
+  @include border-radius(0);
+  width: 400px;
+  margin-left: -200px;
+  .modal-header{
+    border-bottom: 1px solid #BEBEBE;
+    padding: 5px 10px;
+    h3{
+      font-size: 18px;
+      padding-left: 10px;
+      font-family: "microsoft yahei";
+      background: url("../images/account-ico.png") no-repeat 0 -120px;
+    }
+    .close{
+      top:5px;
+      margin-top: 0px;
+      font-size: 26px;
+      cursor: pointer;
+    }
+  }
+
+}
+article {
+  background: #fff url('../images/box-bg-left.png') repeat-y 0 0;
+  border: 1px solid #bebebe;
+  &.mt10 {
+    margin-top: 10px;
+  }
+}
+aside{
+  width: 224px;
+  @at-root ul.leftmenus{
+    padding-top: 19px;
+    li{
+      position: relative;
+      height: 58px;
+      line-height:58px;
+      background: url('../images/divide.png') no-repeat center bottom;
+      &.current{
+        width: 230px;
+        background: url('../images/current.png') no-repeat;
+        margin-left: -3px;
+        a{
+          color: #fff;
+          text-decoration: none;
+          &:hover{
+            color: #fff;
+            text-decoration: none;
+          }
+        }
+      }
+      &.maintain{
+        width: 230px;
+        margin-left: -1px;
+        a{
+          color: #797979;
+          text-decoration: none;
+          &:hover{
+            color: #797979;
+            text-decoration: none;
+          }
+        }
+      }
+      a{
+        padding-left: 60px;
+        display: block;
+        font: 18px/56px 'microsoft yahei';
+        color: #3e3d3d;
+        &:hover{
+          color:#669fd5;
+          text-decoration: underline;
+        }
+      }
+      i{
+        &.src-hot{
+          position: absolute;
+          left: 140px;
+          top: 3px;
+        }
+        &.src-maintain{
+          background: url('../images/wh.png') no-repeat;
+          width: 38px;
+          height: 37px;
+          position: absolute;
+          right: 4px;
+          top: 0;
+        }
+      }
+    }
+  }
+}
+
+// 在线客服
+.service-wrap {
+  z-index: 99;
+  position: fixed;
+  right: 0;
+  top: 270px;
+  .service{
+    margin-top: (278px - 189)/2;
+    width: 58px;
+    height: 189px;
+    background: url(../images/service.png) no-repeat;
+    cursor: pointer;
+  }
+  .service-unfold{
+    display: none;
+    width: 198px;
+    height: 278px;
+    background: url(../images/service-unfold.png) no-repeat;
+    a.serve {
+      position: absolute;
+      left: 0;
+      top: 44px;
+      width: 58px;
+      height: 189px;
+      text-indent: -9999px;
+    }
+    a.ol {
+      position: absolute;
+      left: 84px;
+      top: 21px;
+      width: 93px;
+      height: 28px;
+      text-indent: -9999px;
+    }
+    a.help {
+      @extend a.ol;
+      top: 59px;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+extends layouts/_default
+block style
+  // build:css styles/state.css
+  link(rel='stylesheet', href='styles/state.css')
+  // endbuild
+body
+  block main
+    .result
+      .ico-succ
+      table.table-b
+        tr
+          td 订单号：yuuwddddddddddd
+          td 充值方式：网银充值
+          td 游戏：传奇霸业 双线25服
+        tr
+          td 充值帐号：xxxxxxxxxxx
+          td
+            | 充值金额：
+            span.org 100
+            | 元
+          td
+            | 充值所得：
+            span.org 1000
+            | 元宝
+        tr
+          td
+            | 获得积分：
+            span.org 1000
+            | 积分
+            a(href="#",class="btn-link") 兑换礼品
+          td
+            | 获得返利：
+            span.org 0.01
+            | 元
+            a(href="#",class="btn-link") 优惠券账户
+          td
+            | 会员成长点：
+            span.org 35
+            | 点
+        tr
+          td
+            | 很抱歉，本次您的
+            span.org 200
+            | 积分抵用充值失败
+      .btns
+        a(href="#",class="btn-org-m")
+          span 继续充值
+        a(href="#",class="btn-blue-m")
+          span 游戏大厅
+      .bottom-info
+        p 账户安全提示：您当前账号尚未绑定手机，为了您的账户安全，请及时绑定手机。
+          a(href="#") 【马上绑定】
+  block scripts
+    script.
+

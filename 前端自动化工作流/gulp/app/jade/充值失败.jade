@@ -1,0 +1,46 @@
+extends layouts/_default
+block style
+  // build:css styles/state.css
+  link(rel='stylesheet', href='styles/state.css')
+  // endbuild
+body
+  block main
+    .result.none
+      .ico-error
+      p.txt-center.order-info
+       span 订单号：wwwwwwwwwwwwwww
+       span 如有疑问，请联系
+         a(href="#",class="btn-link") 在线客服
+      p.txt-center.error-info
+        span 错误代码：A0252
+        span 错误信息：系统不支持改组卡型！
+      .btns
+        a(href="#",class="btn-org-m")
+          span 继续充值
+        a(href="#",class="btn-blue-m")
+          span 游戏大厅
+      .bottom-info
+        p 账户安全提示：您当前账号尚未绑定手机，为了您的账户安全，请及时绑定手机。
+          a(href="#") 【马上绑定】
+    .result
+      .ico-uncomplete
+      p.txt-center.order-info
+        span 订单号：wwwwwwwwwwwwwww
+      .reason-wrap
+        h4 可能原因：
+        p.reason 1、您的支付过程没有完成。
+        p.reason 2、银行/账户已扣款，但没有提示成功？网络传输问题可能造成延时，请不要担心，我们尽快会支付渠道对账后，恢复此服务，为你开通服务。
+        p.reason 3、银行/账户没有扣款？建议您重新支付一次试试看，如果仍无法成功，请联系相关银行/通信运营商客服。
+        p.reason 4、如果还不能帮到你，请联系 
+          a(href="#",target="_blank") 在线客服
+      .btns
+        a(href="#",class="btn-org-m")
+          span 继续充值
+        a(href="#",class="btn-blue-m")
+          span 游戏大厅
+      .bottom-info
+        p 账户安全提示：您当前账号尚未绑定手机，为了您的账户安全，请及时绑定手机。
+          a(href="#") 【马上绑定】
+
+  block scripts
+    script.

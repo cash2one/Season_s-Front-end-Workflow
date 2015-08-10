@@ -1,0 +1,290 @@
+.account{
+  width: 1018px;
+  margin: 0 auto;
+  ul.leftmenus{
+    padding-top: 0px;
+  }
+
+  aside{
+    .hd{
+      padding:20px 10px;
+      background:url("../images/account-left-bg.png") repeat;
+      h3{
+        font-size: 24px;
+        font-family: "microsoft yahei";
+        color:#000000;
+        padding-left: 70px;
+        background: url("../images/account-ico.png") no-repeat 35px 8px;
+        height: 40px;
+        line-height: 40px;
+
+      }
+      p{
+        padding:10px 22px ;
+        line-height: 1.5;
+      }
+    }
+  }
+  section{
+    width: 794px;
+    .account-main{
+      padding: 20px;
+    }
+  }
+  .user-info{
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #BEBEBE;
+    dl{
+
+    }
+    dt{
+      width: 86px;
+      height: 86px;
+      float: left;
+      margin-right: 20px;
+      a{
+        display: block;
+        position: relative;
+        b{
+          position: absolute;
+          width: 18px;
+          height: 18px;
+          right: 0px;
+          bottom: 0px;
+          background: url("../images/account-ico.png") no-repeat 0px -182px;
+
+        }
+      }
+      img{
+        width: 84px;
+        height: 84px;
+        display: block;
+        border: 1px solid #BEBEBE;
+      }
+    }
+    dd{
+      margin-top:10px;
+      margin-bottom: 10px;
+      width: 640px;
+      float: left;
+      .name{
+        font-size: 18px;
+        color: #000000;
+        font-weight: bold;
+        margin-right: 10px;
+        font-family: "microsoft yahei";
+        display: block;
+        float: left;
+        line-height: 22px;
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+      .level{
+        height: 20px;
+        padding-top: 16px;
+        font-family: "arial";
+        background: url("../images/account-ico.png") no-repeat right -33px;
+        display: block;
+        float: left;
+        position: relative;
+        margin-top: -15px;
+        padding-right: 25px;
+        span{
+          color: #ffffff;
+          font-size: 14px;
+          height: 18px;
+          line-height: 18px;
+          display: block;
+          background: url("../images/account-ico.png") no-repeat 0px -49px;
+          white-space: nowrap;
+          padding-left: 10px;
+        }
+      }
+      .common{
+        height: 20px;
+        padding-top: 16px;
+        font-family: "arial";
+        display: block;
+        float: left;
+        position: relative;
+        margin-top: -15px;
+        padding-right: 25px;
+        span{
+          color: #ffffff;
+          font-size: 14px;
+          height: 18px;
+          line-height: 18px;
+          display: block;
+          background: #B6B6B6;
+          border-radius: 10px;
+          white-space: nowrap;
+          padding: 0 10px;
+        }
+      }
+      p{
+        font-size: 14px;
+        float: left;
+        margin-right: 20px;
+        strong{
+          color: #ff6600;
+          padding:0 5px;
+          font-weight: bold;
+        }
+        a{
+          color:#669FD5;
+          text-decoration: underline;
+        }
+      }
+
+    }
+  }
+  .account-list{
+    h4{
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      height: 24px;
+      line-height: 24px;
+      padding-left: 10px;
+      background: url("../images/account-ico.png") no-repeat 0 -210px;
+      font-family: "microsoft yahei";
+      margin-bottom: 20px;
+    }
+    p.info{
+      font: 14px/2 'SimSun';
+      color: #ff5400;
+      height: 28px;
+      margin-bottom: 10px;
+    }
+  }
+  .search{
+    font-size: 14px;
+    margin-bottom: 20px;
+
+    span.fl,input.my-datepicker,.btn-gray-s,.quick{
+      display:block;
+      float: left;
+    }
+    span.fl,.quick{
+      line-height: 46px;
+    }
+    .quick{
+      a{
+        color: #000000;
+          &:hover,.curr{
+          color:#669FD5;
+          text-decoration: underline;
+        }
+      }
+      a.curr{
+        color:#669FD5;
+      }
+    }
+  }
+
+  .my-datepicker{
+    background: url("../images/account-ico.png") no-repeat 175px -75px;
+  }
+
+}
+
+.table-a{
+  width: 100%;
+  margin-bottom: 30px;
+  th,td{
+    padding: 5px;
+    line-height: 24px;
+    font-size: 14px;
+  }
+
+
+  th{
+    background:#669FD5;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+
+  }
+  td{
+    text-align: center;
+    border-bottom: 1px solid #BEBEBE;
+  }
+  td.txt-left{
+    text-align: left;
+  }
+  td.txt-right{
+    text-align: right;
+  }
+  tr.odd {
+    background: #F6FBFF;
+  }
+}
+.paginator{
+  float: right;
+  font-size: 14px;
+  color: #000;
+
+  a{
+    color: #000;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+  .total,.page,.current,.to{margin:0 5px;}
+  b.org{
+    color: #ff6600;
+    font-weight: bold;
+  }
+  .to{
+    input{
+      width: 30px;
+      height: 22px;
+      line-height: 22px;
+      padding: 0 3px;
+      border: 1px solid #B7B7B7;
+    }
+  }
+}
+.dialog {
+  .row-a{
+    margin-bottom: 20px;
+
+  }
+  .row-b p{
+    font-size: 14px;
+  }
+  .col-1,.col-2{
+    float: left;
+    font-size: 14px;
+  }
+  .col-1{
+    width: 100px;
+    text-align: right;
+    padding-right: 5px;
+    line-height: 44px;
+  }
+.btn-box{
+  text-align: center;
+  a{
+    display: inline-block;
+  }
+}
+.error{
+  font-size: 14px;
+  color: #ff0000;
+  padding-left:100px;
+  }
+ .row-b{
+   margin-top: 30px;
+   margin-bottom: 50px;
+   padding-left: 50px;
+ }
+}
+.mr5{
+  margin-right: 5px;
+}
+.mr10{
+  margin-right: 10px;
+}

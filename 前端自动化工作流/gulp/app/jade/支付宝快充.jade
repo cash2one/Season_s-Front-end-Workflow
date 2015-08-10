@@ -1,0 +1,208 @@
+extends layouts/_default
+- var currmenu = "游戏充值"
+
+block title
+  title 顺网游戏充值
+block style
+  // build:css styles/main.css
+  link(rel='stylesheet', href='styles/main.css')
+  // endbuild
+body
+  block main
+    article.size.mt10.clearfix
+      aside.fl
+        include layouts/_payments
+      section.fl
+        .content-wrap.clearfix
+          include layouts/_ac-games
+          .row
+            label(for="i_account") 充值金额：
+            .money-bigwrap.clearfix
+              ul.money-wrap
+                - var items = ['10', '20', '50', '100', '200', '500', '1000', '3000']
+                - each item in items
+                  li
+                    span.unit= item + "元"
+                    span.select
+                    span.src-flag
+                li#item
+                  .default
+                    span.unit 其他金额元
+                    span.select
+                    span.src-flag
+                  .click.none
+                    .txt-wrap2
+                      input(type="text", data-toggle="tooltip", data-placement="top", data-trigger="click").txt-ssm.fl#input-money
+                      span.tips 1000
+                    span.unit 元
+                    span.select
+                    span.src-flag
+              span.money-tips
+                i *
+                | 单笔充值最少10元
+            p.infos.clearfix
+              | 充值成功即可获得
+              span 1000
+              | 元宝
+          .row
+            .coupon-wrap
+              a(href="###").src-radio-disable
+                | 顺圆余额
+                span 100
+                | 个
+              span.tips
+                | 使用
+                i 100
+                | 顺圆
+              span.tips
+                | 抵用 
+                b ￥100.00
+            .coupon-wrap
+              a(href="###").src-radio-chk 使用优惠券或会员积分
+              span.tips
+                | 使用
+                i 100
+                | 顺圆
+              span.tips
+                | 抵用 
+                b ￥100.00
+            .discount-wrap
+              ul.tabs.clearfix
+                li.select 现金券
+                li 会员积分
+                li 满减券
+              .discount
+                p.error.none 抱歉，您暂时没有可用的现金券
+                .tickets-wrap
+                  span.info 现金券单笔限用6张
+                  ul.tickets.clearfix
+                    - for (var i=0; i<10; i++)
+                      li.src-cash
+                        p.content 1000
+                        p.date 截止2015-12-12
+                  ul.tickets.clearfix.none.min-tickets
+                    - for (var i=0; i<10; i++)
+                      li.src-cash
+                        p.content 1000
+                        p.date 截止2015-12-12
+                  p.help 显示全部：
+                    a(href="###") 展开
+                      i.src-down
+              .discount.none
+                p.error.none 抱歉，您暂时没有可用的会员积分
+                .integral-wrap
+                  span.filler 使用
+                  .txt-wrap3.clearfix
+                    input(type="text").txt-sm.fl
+                    span.tips 100000
+                  span.filler 积分（共有100积分）
+                  a(href="http://", target="_blank").link 兑换礼品
+              .discount.none
+                p.error.none 抱歉，您暂时没有可用的满减券
+                .tickets-wrap
+                  span.info 满减券单笔限用1张
+                  ul.tickets.clearfix
+                    - for (var i=0; i<10; i++)
+                      li.src-full
+                        p.full 满1000
+                        p.plus 减100
+                        p.date 截止2015-12-12
+                  ul.tickets.clearfix.none.min-tickets
+                    - for (var i=0; i<10; i++)
+                      li.src-full
+                        p.full 满1000
+                        p.plus 减100
+                        p.date 截止2015-12-12
+                  p.help 显示全部：
+                    a(href="###") 展开
+                      i.src-down
+            h3.total 实付金额：
+              span ￥100.00
+            .btn-wrap
+              a(href="#dialog-a", role="button", data-toggle="modal").btn-org-l
+                span 立即充值
+              span.relieve 您已开通支付宝快充业务，如想关闭请 
+                a(href="#dialog-b", role="button", data-toggle="modal") 点此解绑
+              a(href="#dialog-c", role="button", data-toggle="modal").btn-org-l
+                span 弹层3
+              a(href="#dialog-d", role="button", data-toggle="modal").btn-org-l
+                span 弹层4
+        .content-tips.none
+          p.tips 您尚未开通支付宝快充服务
+          a(href="###").btn-org-l
+            span 马上开通
+        include layouts/_helps
+        +_helps(4)
+  block footer
+    .modal.hide.fade.dialog#dialog-a(data-backdrop="static")
+      .modal-header
+        button(type="button",class="close",data-dismiss="modal",aria-hidden="true") &times;
+        h3 转赠
+      .modal-body
+        table
+          tbody
+            tr
+              td.right 订单号：
+              td 20150417095075798
+            tr
+              td.right 充值方式：
+              td 网银支付
+            tr
+              td.right 游戏：
+              td 传奇霸业 双线25服
+            tr
+              td.right 充值账号：
+              td SC18801397
+            tr
+              td.right 充值金额：
+              td
+                span.warn 100
+                | 元
+            tr
+              td.right 充值所得：
+              td
+                span.warn 100
+                | 元宝
+            tr
+              td.pd20
+                a(href="#",class="btn-blue-m")
+                  span 确认提交
+              td
+                a(href="#",class="btn-gray-m")
+                  span 返回修改
+    .modal.hide.fade.dialog#dialog-b(data-backdrop="static")
+      .modal-header
+        button(type="button",class="close",data-dismiss="modal",aria-hidden="true") &times;
+        h3 温馨提示
+      .modal-body
+        .p-wrap
+          p 请在新开页面上开通支付宝快充服务！
+          p.warn 完成开通前请不要关闭或刷新此页面。
+        .btns-wrap
+          a(href="#",class="btn-blue-m")
+            span 继续充值
+          a(href="#",class="btn-org-m")
+            span 开通遇到问题
+    .modal.hide.fade.dialog#dialog-c(data-backdrop="static")
+      .modal-header
+        button(type="button",class="close",data-dismiss="modal",aria-hidden="true") &times;
+        h3 温馨提示
+      .modal-body
+        .p-wrap
+          p 支付宝快充解约，正在处理中．．．
+    .modal.hide.fade.dialog#dialog-d(data-backdrop="static")
+      .modal-header
+        button(type="button",class="close",data-dismiss="modal",aria-hidden="true") &times;
+        h3 温馨提示
+      .modal-body
+        .p-wrap
+          p 支付宝快充解约成功~！
+        .btns-wrap
+          a(href="#",class="btn-blue-m")
+            span &nbsp;&nbsp;确认&nbsp;&nbsp;
+  block scripts
+    // build:js scripts/main.js
+    script(src='scripts/main.js')
+    // endbuild
+
+

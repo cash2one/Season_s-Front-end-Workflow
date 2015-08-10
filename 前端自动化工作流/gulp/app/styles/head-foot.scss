@@ -1,0 +1,198 @@
+// common
+@mixin clearfix{
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+.layout{
+  width: 1020px;
+  margin: 0 auto;
+  position: relative;
+}
+.toolbar-head{
+  font-family: 'microsoft yahei';
+  height: 30px;
+  line-height: 30px;
+  background: #3F3D3E;
+  color:#ffffff;
+  font-size: 14px;
+  @include clearfix;
+  a{
+    color: #ffffff;
+  }
+  .login-info{
+    float: left;
+  }
+
+/*toolbar-menu*/
+.toolbar-menu{
+  float: right;
+  li{
+    background: url("../images/ico-head-toolbar.png") no-repeat;
+    padding-left: 30px;
+    float: left;
+    margin-right: 20px;
+    a{
+      color: #ffffff;
+      font-size:14px;
+      line-height: 25px;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+  .ico-0{background-position: 0 8px }
+  .ico-1{background-position: 0 -20px}
+  .ico-2{background-position: 0 -49px}
+  .ico-3{background-position: 0 -81px}
+  .ico-4{background-position: 0 -112px}
+}
+
+}
+/*site-head*/
+.site-head{
+  font-family: 'microsoft yahei';
+  height: 80px;
+  position: relative;
+  background: url("../images/bg-head.png") repeat-x 0 -78px;
+  .logo{
+    width: 230px;
+    height:42px;
+    margin-top: 14px;
+    background: url("../images/logo.png") no-repeat;
+    overflow: hidden;
+    text-indent: -1000px;
+    display: block;
+    float: left;
+  }
+  .site-head-bg{
+    background: url("../images/bg-head-left.png") no-repeat left top;
+    @include clearfix;
+  }
+  .menu{
+    float: right;
+
+    li{
+      float: left;
+      min-width: 114px;
+      a{
+        font-size: 18px;
+        color: #000000;
+        display: block;
+        text-align: center;
+        line-height: 76px;
+        &:hover{
+          color: #286eb1;
+        }
+      }
+
+    }
+    .curr{
+      background: url("../images/bg-head.png") repeat-x 0 0;
+      a{
+        color: #286eb1;
+      }
+    }
+  }
+}
+/*toolbar-info*/
+.toolbar-wrap{
+  &.fixed{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+  }
+  .toolbar-info{
+    font-family: 'microsoft yahei';
+    height: 30px;
+    background: #669fd5;
+    line-height: 30px;
+    position: relative;
+    p{
+      font-size: 14px;
+      text-align: center;
+      line-height: 30px;
+      color: #ffffff;
+      a.pay{
+        font-weight: bold;
+        color: #3febfa;
+        text-decoration: underline;
+      }
+    }
+    .close{
+     position: absolute;
+     right: 10px;
+     font-size: 22px;
+     color: #ffffff;
+     line-height: 30px;
+     cursor: pointer;
+    }
+  }
+}
+.toolbar-info{
+    font-family: 'microsoft yahei';
+    height: 30px;
+    background: #FF7D1B;
+    line-height: 30px;
+    position: relative;
+    p{
+      font-size: 14px;
+      text-align: center;
+      line-height: 30px;
+      color: #ffffff;
+    }
+    .close{
+     position: absolute;
+     right: 10px;
+     font-size: 22px;
+     color: #ffffff;
+     line-height: 30px;
+     cursor: pointer;
+    }
+  }
+.toolbar-info-pay {
+  font-family: 'microsoft yahei';
+  height: 30px;
+  background: #ffffff;
+  line-height: 30px;
+  position: relative;
+  p{
+    font-size: 14px;
+    text-align: center;
+    line-height: 30px;
+    color: #ff0000;
+  }
+}
+/*site-foot*/
+.site-foot{
+  background: #fafafa;
+  padding: 30px 0;
+  font-size: 14px;
+  p{
+    text-align: center;
+    color: #868686;
+    line-height: 30px;
+    font-size: 14px;
+    a{
+      color: #868686;
+      display: inline-block;
+      padding: 0 10px;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+  .ico{
+    position: absolute;
+    right:150px;
+    top:15px;
+  }
+}

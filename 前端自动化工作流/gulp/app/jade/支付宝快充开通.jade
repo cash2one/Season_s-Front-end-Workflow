@@ -1,0 +1,107 @@
+extends layouts/_default
+- var currmenu = "游戏充值"
+
+block title
+  title 顺网游戏充值
+block style
+  // build:css styles/main.css
+  link(rel='stylesheet', href='styles/main.css')
+  // endbuild
+body
+  block main
+    .content-tips.size.mt10.clearfix.none
+      p.tips 您尚未开通支付宝快充服务
+      a(href="###").btn-org-l
+        span 马上开通
+    .content-tips.size.mt10.clearfix
+      p.tips-1 您当前支付金额已经超过支付限额，请更换其他方式充值。
+      .table-wrap
+        table
+          tbody
+            tr
+              td.right 同一支付宝账号：
+              td 
+            tr
+              td.right 单笔支付限额：
+              td 2000元
+            tr
+              td.right 每日限额：
+              td 2000元
+            tr
+              td.right 每月限额：
+              td 10000元
+      a(href="###").btn-org-l
+        span 重新充值
+  block footer
+    .modal.hide.fade.dialog#dialog-a(data-backdrop="static")
+      .modal-header
+        button(type="button",class="close",data-dismiss="modal",aria-hidden="true") &times;
+        h3 转赠
+      .modal-body
+        table
+          tbody
+            tr
+              td.right 订单号：
+              td 20150417095075798
+            tr
+              td.right 充值方式：
+              td 网银支付
+            tr
+              td.right 游戏：
+              td 传奇霸业 双线25服
+            tr
+              td.right 充值账号：
+              td SC18801397
+            tr
+              td.right 充值金额：
+              td
+                span.warn 100
+                | 元
+            tr
+              td.right 充值所得：
+              td
+                span.warn 100
+                | 元宝
+            tr
+              td.pd20
+                a(href="#",class="btn-blue-m")
+                  span 确认提交
+              td
+                a(href="#",class="btn-gray-m")
+                  span 返回修改
+    .modal.hide.fade.dialog#dialog-b(data-backdrop="static")
+      .modal-header
+        button(type="button",class="close",data-dismiss="modal",aria-hidden="true") &times;
+        h3 温馨提示
+      .modal-body
+        .p-wrap
+          p 请在新开页面上开通支付宝快充服务！
+          p.warn 完成开通前请不要关闭或刷新此页面。
+        .btns-wrap
+          a(href="#",class="btn-blue-m")
+            span 继续充值
+          a(href="#",class="btn-org-m")
+            span 开通遇到问题
+    .modal.hide.fade.dialog#dialog-c(data-backdrop="static")
+      .modal-header
+        button(type="button",class="close",data-dismiss="modal",aria-hidden="true") &times;
+        h3 温馨提示
+      .modal-body
+        .p-wrap
+          p 支付宝快充解约，正在处理中．．．
+    .modal.hide.fade.dialog#dialog-d(data-backdrop="static")
+      .modal-header
+        button(type="button",class="close",data-dismiss="modal",aria-hidden="true") &times;
+        h3 温馨提示
+      .modal-body
+        .p-wrap
+          p 支付宝快充解约成功~！
+        .btns-wrap
+          a(href="#",class="btn-blue-m")
+            span &nbsp;&nbsp;确认&nbsp;&nbsp;
+  block scripts
+    // build:js scripts/main.js
+    script(src='scripts/main.js')
+    // endbuild
+
+

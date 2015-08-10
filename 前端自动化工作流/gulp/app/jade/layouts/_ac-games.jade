@@ -1,0 +1,81 @@
+mixin _ac-games
+  .row.clearfix
+    label(for="i_account") 充值账号：
+    .oneself.none
+      .txt-wrap
+        input(type="text")#i_account.txt-lg
+        span.tips 请输入用户名
+      .btn-wrap.fl
+        a(href="###").btn-gray-s
+          span 确定
+    .others SC1852237
+      a(href="###", data-account="SC1852237") 给他人充值
+  .row.clearfix
+    label(for="i_games") 选择游戏：
+    .txt-wrap.clearfix
+      input(type="text", readonly="readonly").txt.fl#i_games
+      span.tips 请选择充值的游戏
+      a(href="###").src-dropdown
+      .games-fake.none
+        p.loading 游戏查询中...
+      .games-wrap.dd.none#game-picker-dialog
+        .heads-wrap
+          ul.heads
+            li.select 玩过的
+            - var items = ['ABC', 'DEFG', 'HIJK', 'LMNO', 'PQRS', 'TUVW', 'XYZ', '0-9']
+            - each item in items
+              li= item
+        .bodys-wrap
+          ul.bodys.none
+            - for (var i=0; i<20; i++)
+              li
+                span.name 傲视九重天
+                span.select
+          - for (var i=0; i<8; i++)
+            ul.bodys.none
+              - for (var j=0; j<20; j++)
+                li
+                  span.name 傲视九重天
+                  span.select
+          p.error 你还未玩过 
+            span 傲世九重天， 
+            a(href="###", target="_blank") 立即进入游戏
+    .txt-wrap.clearfix
+      input(type="text", readonly="readonly").txt.fl#i_servers
+      span.tips 请选择游戏服务器
+      a(href="###").src-dropdown
+      .server-fake.none
+        p.loading 区服查询中...
+      .server-wrap.dd.none#game-picker-zone
+        .heads-wrap
+          ul.heads
+            li.select 最近玩过的区服
+        .bodys-wrap
+          ul.bodys.clearfix.none
+            - for (var i=0; i<20; i++)
+              li
+                span.name 不惑之地1987区
+                span.select
+          h5 双线10区
+          ul.bodys.clearfix
+            - for (var i=0; i<20; i++)
+              li
+                span.name 不惑之地1987区
+                span.select
+          p.error.none 您还没有登录过 
+            span 傲世九重天， 
+            a(href="###", target="_blank") 立即进入游戏
+    .txt-wrap.clearfix
+      span.role-tips 不支持充值到角色，只做参考
+      p.role 角色查询中...
+      input(type="text", value="小李飞刀又见小李飞刀（87级）", readonly="readonly").txt.fl.none
+      a(href="###").src-dropdown.none
+      .account-wrap.dd.none
+        .bodys-wrap
+          ul.bodys
+            - for (var i=0; i<3; i++)
+              li.eps
+                span.name 小李飞刀又见小李飞刀（87级）
+                span.select
+
++_ac-games

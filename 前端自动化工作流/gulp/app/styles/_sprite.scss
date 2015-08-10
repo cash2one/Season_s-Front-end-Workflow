@@ -1,0 +1,88 @@
+.src-sprite, .src-cash-select, .src-cash, .src-down, .src-dropdown-unfold, .src-dropdown, .src-flag, .src-full-select, .src-full, .src-hot, .src-radio-chk, .src-radio-disable, .src-radio, .src-up {
+  background-image: url('../images/src-s9a1f7bf430.png');
+  background-repeat: no-repeat;
+}
+
+.src-cash-select {
+  background-position: 0 -74px;
+  height: 54px;
+  width: 120px;
+}
+
+.src-cash {
+  background-position: 0 -148px;
+  height: 54px;
+  width: 120px;
+}
+.src-cash:hover, .src-cash.cash-hover {
+  background-position: 0 0;
+}
+
+.src-down {
+  background-position: 0 -222px;
+  height: 6px;
+  width: 13px;
+}
+
+.src-dropdown-unfold {
+  background-position: 0 -248px;
+  height: 46px;
+  width: 45px;
+}
+
+.src-dropdown {
+  background-position: 0 -314px;
+  height: 46px;
+  width: 45px;
+}
+
+.src-flag {
+  background-position: 0 -380px;
+  height: 22px;
+  width: 22px;
+}
+
+.src-full-select {
+  background-position: 0 -496px;
+  height: 54px;
+  width: 120px;
+}
+
+.src-full {
+  background-position: 0 -570px;
+  height: 54px;
+  width: 120px;
+}
+.src-full:hover, .src-full.full-hover {
+  background-position: 0 -422px;
+}
+
+.src-hot {
+  background-position: 0 -644px;
+  height: 31px;
+  width: 30px;
+}
+
+.src-radio-chk {
+  background-position: 0 -695px;
+  height: 16px;
+  width: 16px;
+}
+
+.src-radio-disable {
+  background-position: 0 -731px;
+  height: 16px;
+  width: 16px;
+}
+
+.src-radio {
+  background-position: 0 -767px;
+  height: 16px;
+  width: 16px;
+}
+
+.src-up {
+  background-position: 0 -803px;
+  height: 6px;
+  width: 13px;
+}

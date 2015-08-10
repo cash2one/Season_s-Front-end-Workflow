@@ -1,0 +1,78 @@
+extends layouts/_account
+block account-list
+  h4 优惠券查询
+  include layouts/_search
+  .table-list
+    table(class="table-a",id="table-a")
+      thead
+        tr
+          th(width="15%") 优惠券类型
+          th(width="15%") 生效时间
+          th(width="15%") 过期时间
+          th(width="15%") 使用说明
+          th(width="15%") 获取来源
+          th(width="15%") 获取时间
+          th 状态
+      tbody
+        - for (var i=0;i<10;i++)
+          tr
+            td 现金券
+            td 2015-04-10
+            td 2015-04-12
+            td 充值抵用
+            td 顺网游戏
+            td 2015-04-10
+            td
+              a(class="btn-link",href="#dialog-a",role="button",data-toggle="modal") 转赠
+    include layouts/_page
+
+
+
+block footer
+  .modal.hide.fade.dialog#dialog-a(data-backdrop="static")
+    .modal-header
+      button(type="button",class="close",data-dismiss="modal",aria-hidden="true") &times;
+      h3 转赠
+    .modal-body
+        p.error 出错信息
+      .row-a.clearfix
+        .col-1 被赠账户:
+        .col-2
+          input(type="text",class="txt-lg")
+      .row-a.clearfix
+        .col-1 确认账户:
+        .col-2
+          input(type="text",class="txt-lg")
+      .row-a.btn-box
+        a(href="###",class="btn-blue-m")
+          span 确定
+
+
+  .modal.hide.fade.dialog#dialog-b(data-backdrop="static")
+    .modal-header
+      button(type="button",class="close",data-dismiss="modal",aria-hidden="true") &times;
+      h3 提示信息
+    .modal-body
+      .row-a.row-b
+        p
+          | 您当前的账户还没有绑定手机
+          br
+          | 为了您的账户安全，请及时绑定手机
+      .row-a.btn-box
+        a(href="###",class="btn-blue-m mr10")
+         span 前往绑定
+        a(href="###",class="btn-blue-m")#btn-b-close
+          span 关闭
+
+
+
+append scripts
+  script.
+    $(function(){
+        $('#dialog-b').modal('show');
+        $("#btn-b-close").on("click",function(){
+            $('#dialog-b').modal('hide');
+        })
+    })
+
+

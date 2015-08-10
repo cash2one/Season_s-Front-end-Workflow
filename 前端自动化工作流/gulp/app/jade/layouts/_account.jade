@@ -1,0 +1,72 @@
+extends _default
+- var currmenu = "我的账户"
+
+mixin leftmenu()
+  - var leftmenus = ["待支付订单","我的优惠券","消费明细","个人明细","代充明细"]
+  ul.leftmenus
+    -each leftmenu ,index in leftmenus
+      -if(index == 0){
+        li(class="current")
+          a(href='#{leftmenu}.html')= leftmenu
+      -}else{
+        li
+          a(href='#{leftmenu}.html')= leftmenu
+      -}
+
+
+
+
+block style
+  // build:css styles/myaccount.css
+  link(rel='stylesheet', href='styles/myaccount.css')
+  // endbuild
+body
+  block main
+    article.account.mt10.clearfix
+      aside.fl
+        .hd
+          h3 我的账户
+          p 在这里查看账户信息以及交易明细，并进行优惠券的管理
+        +leftmenu()
+
+
+      section.fl
+        .account-main.clearfix
+          .user-info.clearfix
+            dl
+              dt
+                a(href="#",target="_blank")
+                  img(src="http://placehold.it/76x76")
+                  b
+              dd
+                a(href="#",class="name",target="_blank") SC1852237
+                a(href="#",class="level",target="_blank").none
+                  span 普通会员
+                a(href="#",class="common",target="_blank")
+                  span 普通
+              dd
+                p.c1
+                  | 顺圆余额:
+                  strong 0.15
+                  a(href="#",class="btn-link") 充值
+                p.c2
+                  | 可用积分:
+                  strong 20000
+                  a(href="#",class="btn-link") 兑换
+          .account-list
+            block account-list
+
+block scripts
+  script.
+    $(function(){
+        $(".my-datepicker").datepicker({
+          language:  'zh-CN',
+          format: "yyyy-mm-dd",
+          autoclose: true
+        });
+        $(".table-a tbody tr:odd").addClass("odd")
+    })
+
+
+
+

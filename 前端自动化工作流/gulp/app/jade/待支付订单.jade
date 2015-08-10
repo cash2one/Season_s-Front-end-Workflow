@@ -1,0 +1,23 @@
+extends layouts/_account
+block account-list
+  h4 待支付订单
+  p.info 注：待支付订单仅保留当天数据，过期后将无法进行支付，请尽快付款！
+  .table-list
+    table(class="table-a",id="table-a")
+      thead
+        tr
+          th(width="20%") 订单号
+          th(width="10%") 时间
+          th(width="20%") 消费品
+          th(width="10%") 消费金融
+          th(width="10%") 操作
+      tbody
+        - for (var i=0;i<10;i++)
+          tr
+            td DN2015255966332558223
+            td 11:53:38
+            td(title="街机三国（双线），游戏币1街机三国（双线），游戏币1").txt-left 街机三国（双线），游戏币1街机三国（双线），游戏币1
+            td 1.00
+            td
+              a(class="btn-link",href="###") 付款
+    include layouts/_page

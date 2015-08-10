@@ -1,0 +1,4 @@
+$src-spacing: 20px;
+$src-sprite-dimensions: true;
+@import "src/*.png";
+@include all-src-sprites;

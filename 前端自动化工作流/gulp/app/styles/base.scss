@@ -1,0 +1,85 @@
+@import "compass/reset";
+@import "compass/css3";
+@import "common";
+@import "sprite";
+
+body{
+  background: #fafafa;
+  font: 12px/18px simsun,Arial,Helvetica,sans-serif;
+  min-width: 1020px;
+}
+label{
+  vertical-align: middle;
+  color: #fff;
+}
+a{
+  text-decoration: none;
+}
+.pr{
+  position: relative;
+}
+.pa{
+  position: absolute;
+}
+.fl{
+  float: left;
+  display: inline;
+}
+.fr{
+  float: right;
+  display: inline;
+}
+.none{
+  display: none;
+}
+.block{
+  display: block;
+}
+.hidden{
+  visibility: hidden;
+}
+.ti-minus{
+  text-indent: -9999px;
+}
+.cb{
+  clear: both;
+}
+.cl{
+  clear: left;
+}
+.cr{
+  clear: right;
+}
+.unl{
+  text-decoration: underline;
+}
+.no_unl{
+  text-decoration: none;
+}
+.zoom{
+  zoom: 1;
+}
+.eps{
+  // width: 130px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.w{
+  width: 100%;
+}
+.h{
+  height: 100%;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,.clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+.clearfix:after {
+  clear: both;
+}

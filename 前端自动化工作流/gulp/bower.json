@@ -1,0 +1,8 @@
+{
+  "name": "gulp-in-demo",
+  "private": true,
+  "dependencies": {
+    "jquery": "^1.11.2",
+    "modernizr": "~2.8.1"
+  }
+}

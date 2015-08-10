@@ -1,0 +1,54 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    block title
+    meta(name='description', content='')
+    // build:css styles/vendor.css
+    link(rel='stylesheet', href='styles/base.css')
+    link(rel='stylesheet', href='../bower_components/bootstrap/min/bootstrap-datepicker.css')
+    link(rel='stylesheet', href='../bower_components/bootstrap/min/modal.css')
+    link(rel='stylesheet', href='../bower_components/bootstrap/min/tooltip.css')
+    link(rel='stylesheet', href='../bower_components/bootstrap/min/dropdown.css')
+    link(rel='stylesheet', href='styles/head-foot.css')
+    link(rel='stylesheet', href='styles/module.css')
+    // endbuild
+    block style
+
+    // build:js scripts/html5shiv-min.js
+    <!--[if lt IE 9]>
+    <script src='../bower_components/html5shiv-min.js'></script>
+    <![endif]-->
+    // endbuild
+
+  body
+    #browser.browser(style='display: none;')
+      p
+        | 顺网提醒您：为了更好更快的使用本系统，请使用IE8及以上浏览器，强烈推荐chrome,ie10及顺网
+        a(href='http://www.f1browser.com', target='_blank') [f1浏览器]
+    include _header
+    block main
+    include _footer
+
+    // build:js scripts/vendor.js
+    //- bower:js
+    script(src='../bower_components/jquery/dist/jquery.min.js')
+    script(src='../bower_components/bootstrap/min/bootstrap-datepicker.js')
+    script(src='../bower_components/bootstrap/min/bootstrap-modal.js')
+    script(src='../bower_components/bootstrap/min/bootstrap-tooltip-bsie.js')
+    //- endbower
+    // endbuild
+    // build:js scripts/optimize.js
+    script(src='scripts/comm.js')
+    script(src='scripts/optimize.js')
+    // endbuild
+
+    block scripts
+
+    <!--[if IE 6]>
+    script(type="text/javascript").
+      window.onload = function(){
+        document.getElementById('browser').style.display='block'
+       }
+    <![endif]-->
+

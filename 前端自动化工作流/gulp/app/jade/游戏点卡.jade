@@ -1,0 +1,123 @@
+extends layouts/_default
+- var currmenu = "游戏充值"
+
+block title
+  title 顺网游戏充值
+block style
+  // build:css styles/main.css
+  link(rel='stylesheet', href='styles/main.css')
+  // endbuild
+body
+  block main
+    article.size.mt10.clearfix
+      aside.fl
+        include layouts/_payments
+      section.fl
+        .content-wrap.clearfix
+          include layouts/_ac-games
+          .row
+            label(for="i_account") 充值方式：
+            .gcards-bigwrap.clearfix
+              ul.gcards-wrap
+                li
+                  img(src="images/pic/img-jk.png", alt="")
+                  span(style="display:block;").select
+                  span(style="display:block;").src-flag
+                li
+                  img(src="images/pic/img-sd.png", alt="")
+                  span.select
+                  span.src-flag
+          .row
+            label(for="i_account") 充值金额：
+            .money-bigwrap.clearfix
+              ul.money-wrap
+                - var items = ['10', '15', '30', '50', '100', '500', '1000']
+                - each item in items
+                  li
+                    span.unit= item + "元"
+                    span.select
+                    span.src-flag
+              span.money-tips
+                i *
+                | 单笔充值最少10元
+            p.infos.clearfix
+              | 充值成功即可获得
+              span 500
+              | 元宝
+          .mobile-wrap.clearfix
+            .row.clearfix
+              label(for="i_account") 充值账号：
+              .txt-wrap
+                input(type="text")#i_account.txt-lg
+            .row.clearfix
+              label(for="i_password") 充值密码：
+              .txt-wrap
+                input(type="password")#i_password.txt-lg
+            .row
+              h3.total 实付金额：
+                span ￥100.00
+              .btn-wrap
+                a(href="#dialog-a", role="button", data-toggle="modal").btn-org-l
+                  span 立即充值
+                a(href="#dialog-b", role="button", data-toggle="modal").btn-org-l
+                  span 弹层2
+        include layouts/_helps
+        +_helps(3)
+  block footer
+    .modal.hide.fade.dialog#dialog-a(data-backdrop="static")
+      .modal-header
+        button(type="button",class="close",data-dismiss="modal",aria-hidden="true") &times;
+        h3 转赠
+      .modal-body
+        table
+          tbody
+            tr
+              td.right 订单号：
+              td 20150417095075798
+            tr
+              td.right 充值方式：
+              td 网银支付
+            tr
+              td.right 游戏：
+              td 传奇霸业 双线25服
+            tr
+              td.right 充值账号：
+              td SC18801397
+            tr
+              td.right 充值金额：
+              td
+                span.warn 100
+                | 元
+            tr
+              td.right 充值所得：
+              td
+                span.warn 100
+                | 元宝
+            tr
+              td.pd20
+                a(href="#",class="btn-blue-m")
+                  span 确认提交
+              td
+                a(href="#",class="btn-gray-m")
+                  span 返回修改
+    .modal.hide.fade.dialog#dialog-b(data-backdrop="static")
+      .modal-header
+        button(type="button",class="close",data-dismiss="modal",aria-hidden="true") &times;
+        h3 转赠
+      .modal-body
+        .p-wrap
+          p 请在新开页面上完成付款充值！
+          p.warn 完成付款前请不要关闭或刷新此页面。
+        .btns-wrap
+          a(href="#",class="btn-blue-m")
+            span 查看结果
+          a(href="#",class="btn-blue-m")
+            span 重新充值
+          a(href="#",class="btn-org-m")
+            span 充值遇到问题
+  block scripts
+    // build:js scripts/main.js
+    script(src='scripts/main.js')
+    // endbuild
+
+

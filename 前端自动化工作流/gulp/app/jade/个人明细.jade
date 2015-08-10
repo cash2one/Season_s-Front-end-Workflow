@@ -1,0 +1,26 @@
+extends layouts/_account
+block account-list
+  h4 个人明细查询
+  include layouts/_search
+  .table-list
+    table(class="table-a",id="table-a")
+      thead
+        tr
+          th(width="20%") 订单号
+          th(width="20%") 日期
+          th(width="10%") 类型
+          th(width="10%") 收入
+          th(width="10%") 支出
+          th(width="10%") 余额
+          th 备注
+      tbody
+        - for (var i=0;i<10;i++)
+          tr
+            td.txt-left GPN20150410165221569081
+            td 2015-04-10 16:53:45
+            td 消费
+            td.txt-right 1000.00
+            td.txt-right 100.00
+            td.txt-right 900.00
+            td.txt-left 顺网游戏
+    include layouts/_page

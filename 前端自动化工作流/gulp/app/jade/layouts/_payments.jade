@@ -1,0 +1,18 @@
+mixin _payments
+  ul.leftmenus
+    - var items = ['网银支付', '支付宝', '游戏点卡', '支付宝快充', '财付通', '手机充值卡', '微信支付', '固话/手机/宽带', '顺圆一卡通']
+    - each val,index in items
+      if index === 0
+        li.current
+          a(href="###")= val
+          i.src-hot
+      else
+        if index === 7
+          li.maintain
+            a(href="###")= val
+            i.src-maintain
+        else
+          li
+            a(href="###")= val
+
++_payments
